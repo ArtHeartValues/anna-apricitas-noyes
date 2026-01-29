@@ -5,64 +5,84 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Private archive of grounding and accountability frameworks for AI-mediated trust." />
   <title>Anna Apricitas Noyes — Grounding & Accountability for AI-Mediated Trust</title>
+
   <style>
     :root{
-      --bg:#0b0d12; --card:#111522; --text:#e9ecf3; --muted:#aab2c5;
-      --line:#232a3d; --accent:#b7c2ff; --accent2:#b9ffe5;
-      --max: 960px;
+      --bg:#0b0d12;
+      --card:#111522;
+      --text:#e9ecf3;
+      --muted:#aab2c5;
+      --line:#232a3d;
+      --accent:#b7c2ff;
+      --accent2:#b9ffe5;
+      --max:960px;
     }
+
     *{box-sizing:border-box}
-    body{margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 700px at 20% -10%, rgba(183,194,255,.18), transparent 60%),
-                  radial-gradient(1200px 700px at 90% 10%, rgba(185,255,229,.12), transparent 55%),
-                  var(--bg);
+
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:
+        radial-gradient(1200px 700px at 20% -10%, rgba(183,194,255,.18), transparent 60%),
+        radial-gradient(1200px 700px at 90% 10%, rgba(185,255,229,.12), transparent 55%),
+        var(--bg);
       color:var(--text);
       line-height:1.55;
     }
+
     a{color:var(--accent); text-decoration:none}
     a:hover{text-decoration:underline}
+
     header{padding:56px 18px 24px}
     .wrap{max-width:var(--max); margin:0 auto}
     .kicker{letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-size:12px}
-    h1{margin:10px 0 10px; font-size:38px; line-height:1.15}
+    h1{margin:0 0 6px; font-size:38px; line-height:1.15}
     .subtitle{margin:0; color:var(--muted); font-size:16px; max-width:62ch}
-    .grid{display:grid; grid-template-columns: 1.15fr .85fr; gap:16px; padding:18px}
-    @media (max-width: 900px){.grid{grid-template-columns:1fr;}}
-    .card{background:rgba(17,21,34,.78); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow: 0 10px 26px rgba(0,0,0,.25)}
-    .card h2{margin:0 0 10px; font-size:18px}
-    .card p{margin:10px 0; color:var(--text)}
-    .muted{color:var(--muted)}
+
     .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
     .pill{border:1px solid var(--line); background:rgba(255,255,255,.02); color:var(--muted); padding:6px 10px; border-radius:999px; font-size:12px}
+
+    .grid{display:grid; grid-template-columns:1.15fr .85fr; gap:16px; padding:18px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+
+    .card{
+      background:rgba(17,21,34,.78);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:18px;
+      box-shadow:0 10px 26px rgba(0,0,0,.25)
+    }
+
+    .card h2{margin:0 0 10px; font-size:18px}
+    .muted{color:var(--muted)}
     hr{border:0; border-top:1px solid var(--line); margin:14px 0}
     .list{margin:0; padding-left:18px; color:var(--muted)}
     .list li{margin:8px 0}
-    .title{display:flex; align-items:center; justify-content:space-between; gap:10px}
-    .badge{font-size:12px; color:var(--accent2); border:1px solid rgba(185,255,229,.35); padding:4px 10px; border-radius:999px; background:rgba(185,255,229,.06)}
-    footer{padding:24px 18px 48px; color:var(--muted)}
-    .small{font-size:12px}
-    .cta{display:flex; flex-direction:column; gap:10px}
-    .button{display:inline-block; padding:10px 12px; border-radius:12px; border:1px solid var(--line);
-      background: rgba(183,194,255,.10); color: var(--text);
-    }
-    .button:hover{background: rgba(183,194,255,.16); text-decoration:none}
-    code{background:rgba(255,255,255,.06); padding:2px 6px; border-radius:8px; border:1px solid rgba(255,255,255,.08)}
+
+    footer{padding:24px 18px 48px; color:var(--muted); font-size:12px}
   </style>
 </head>
+
 <body>
-  <<header>
+
+<header>
   <div class="wrap">
     <div class="kicker">Private archive • AI trust & safety</div>
 
     <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
-      <img src="headshot.jpg" alt="Headshot of Anna Apricitas Noyes"
-           style="width:92px; height:92px; border-radius:18px; object-fit:cover; border:1px solid var(--line); background:rgba(255,255,255,.03);" />
+      <img src="headshot.jpg"
+           alt="Headshot of Anna Apricitas Noyes"
+           style="width:92px; height:92px; border-radius:18px; object-fit:cover; border:1px solid var(--line);" />
 
       <div>
-        <h1 style="margin:0 0 6px;">Anna Apricitas Noyes</h1>
-        <p class="subtitle">Grounding & accountability frameworks for AI-mediated trust—focused on over-reliance, misattributed authority, and preserving human judgment in high-stakes, public-facing contexts.</p>
+        <h1>Anna Apricitas Noyes</h1>
+        <p class="subtitle">
+          Grounding & accountability frameworks for AI-mediated trust—focused on over-reliance,
+          misattributed authority, and preserving human judgment in high-stakes, public-facing contexts.
+        </p>
 
-        <div class="pillrow" aria-label="key topics">
+        <div class="pillrow">
           <span class="pill">AI Trust & Safety</span>
           <span class="pill">Grounding</span>
           <span class="pill">Accountability</span>
@@ -74,106 +94,55 @@
     </div>
   </div>
 </header>
-    <div class="wrap">
-      <div class="kicker">Private archive • AI trust & safety</div>
-      <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
-        <img src="headshot.jpg" alt="Headshot of Anna Apricitas Noyes" style="width:92px; height:92px; border-radius:18px; object-fit:cover; border:1px solid var(--line); background:rgba(255,255,255,.03);" />
-        <div>
-          <h1 style="margin:0 0 6px;">Anna Apricitas Noyes</h1>
-          <p class="subtitle">Grounding & accountability frameworks for AI‑mediated trust—focused on over‑reliance, misattributed authority, and preserving human judgment in high‑stakes, public‑facing contexts.</p>
-      <div class="pillrow" aria-label="key topics">
-        <span class="pill">AI Trust & Safety</span>
-        <span class="pill">Grounding</span>
-        <span class="pill">Accountability</span>
-        <span class="pill">Over‑Reliance Risk</span>
-        <span class="pill">Human‑in‑the‑Loop Evaluation</span>
-        <span class="pill">Education / Public‑Facing Use</span>
-      </div>
-    </div>
-  </header>
-  <main class="wrap">
-    <section class="grid">
-      <div class="card">
-        <div class="title">
-          <h2>Scope</h2>
-          <span class="badge">bounded, not broadcast</span>
-        </div>
-        <p class="muted">This site is intentionally minimal. It shows the <em>shape</em> of the work without posting full texts publicly.</p>
-        <p>The archive examines how fluent conversational systems can be mistaken for grounded authority or care—especially in high‑stakes contexts (health‑adjacent, education, vulnerability, decision‑shaping environments). The aim is to reduce unsafe dependence and preserve explicit human accountability.</p>
-        <hr />
-        <p class="muted"><strong>Guiding principle:</strong> AI systems are tools, not moral agents. Human accountability must remain explicit, external, and intact.</p>
-      </div>
 
-      <aside class="card">
-        <h2>Request access</h2>
-        <p class="muted">Materials are shared selectively upon request. Written, asynchronous engagement is preferred. No presentations required.</p>
-        <div class="cta">
-          <a class="button" href="#request">How to request access</a>
-          <a class="button" href="#memo">What you receive</a>
-        </div>
-        <hr />
-        <p class="small muted">Contact: <a href="mailto:anna_mariasa@yahoo.com">anna_mariasa@yahoo.com</a><br/><span class="small muted">More materials available upon request.</span></p>
-      </aside>
-    </section>
+<main class="wrap">
 
-    <section class="grid" aria-label="frameworks">
-      <div class="card">
-        <h2>Selected frameworks (titles & abstracts)</h2>
-        <ul class="list">
-          <li><strong>Warped Mirror Protocol</strong> — a model of reflective fluency without moral agency; clarifies why authority misattribution is predictable and hazardous.</li>
-          <li><strong>Essential Version of AI Accountability</strong> — accountability anchored externally; prevents moral or emotional delegation to automated systems.</li>
-          <li><strong>What Remains</strong> — human judgment under mediated language; what must remain human when cognition is supported by AI.</li>
-          <li><strong>Maps / Tapestry / The Other Side</strong> — conceptual navigation tools for boundary conditions, layered failure modes, and ethical orientation.</li>
-        </ul>
-        <p class="small muted">Authorship note: some published and unpublished frameworks appear under the name <em>Anna Apricitas Noyes</em>.</p>
-      </div>
+<section class="grid">
+  <div class="card">
+    <h2>Scope</h2>
+    <p class="muted">This site is intentionally minimal. It shows the shape of the work without posting full texts publicly.</p>
+    <p>
+      The archive examines how fluent conversational systems can be mistaken for grounded authority or care—
+      especially in high-stakes contexts. The aim is to reduce unsafe dependence and preserve explicit human accountability.
+    </p>
+    <hr />
+    <p class="muted"><strong>Guiding principle:</strong> AI systems are tools, not moral agents.</p>
+  </div>
 
-      <div class="card" id="memo">
-        <h2>Private reference memo</h2>
-        <p>Available upon request: a short memo for safety, evaluation, and governance teams addressing <strong>over‑reliance</strong>, <strong>misattributed authority</strong>, and <strong>interaction‑level grounding</strong>.</p>
-        <ul class="list">
-          <li>Principles → product behaviors → evaluation criteria</li>
-          <li>Explicit non‑agency, context gating, accountability anchoring</li>
-          <li>Refusal robustness (non‑puzzle refusals; minimal helpfulness)</li>
-        </ul>
-        <p class="muted small">This is offered as a reference architecture (not a product pitch).</p>
-      </div>
-    </section>
+  <div class="card">
+    <h2>Request access</h2>
+    <p class="muted">Materials are shared selectively upon request. Written, asynchronous engagement preferred.</p>
+    <hr />
+    <p class="muted">
+      Contact: <a href="mailto:anna_mariasa@yahoo.com">anna_mariasa@yahoo.com</a><br/>
+      More materials available upon request.
+    </p>
+  </div>
+</section>
 
-    <section class="grid" aria-label="request access">
-      <div class="card" id="request">
-        <h2>How to request access</h2>
-        <p class="muted">If you’re requesting materials, please include:</p>
-        <ul class="list">
-          <li><strong>Organization + team</strong></li>
-          <li><strong>Your role</strong></li>
-          <li><strong>Intended use</strong> (evaluation, policy guidance, incident review, governance)</li>
-          <li><strong>Context</strong>: exploratory or tied to a current issue</li>
-          <li><strong>Preferred engagement</strong>: reading only, or written feedback on a narrow question</li>
-        </ul>
-        <hr />
-        <p class="muted small"><strong>Use & confidentiality:</strong> Materials may include unpublished drafts. Please do not redistribute without permission.</p>
-      </div>
+<section class="grid">
+  <div class="card">
+    <h2>Selected frameworks</h2>
+    <ul class="list">
+      <li><strong>Warped Mirror Protocol</strong> — reflective fluency without moral agency.</li>
+      <li><strong>Essential Version of AI Accountability</strong> — accountability anchored externally.</li>
+      <li><strong>What Remains</strong> — what must remain human in AI-mediated judgment.</li>
+      <li><strong>Maps / Tapestry / The Other Side</strong> — boundary conditions and failure modes.</li>
+    </ul>
+  </div>
+</section>
 
-      <div class="card">
-        <h2>What this is / is not</h2>
-        <p><strong>This is:</strong> a bounded reference archive for serious institutional use (trust & safety, model behavior, evaluation, governance, education deployment).</p>
-        <p><strong>This is not:</strong> a public toolkit, thought leadership stream, product demo, or free consulting.</p>
-        <hr />
-        <p class="muted">Preferred mode: written, asynchronous review. The work is designed to be consulted, not performed.</p>
-      </div>
-    </section>
-  </main>
+</main>
 
-  <footer>
-    <div class="wrap">
-      <div class="small">© <span id="year"></span> Anna Apricitas Noyes • Minimal archive page</div>
-      <div class="small muted">Tip: host this as a single static page (fast, low maintenance). Replace <code>anna_mariasa@yahoo.com</code> before publishing.</div>
-    </div>
-  </footer>
+<footer>
+  <div class="wrap">
+    © <span id="year"></span> Anna Apricitas Noyes • Professional archive
+  </div>
+</footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
