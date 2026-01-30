@@ -1,148 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Private archive of grounding and accountability frameworks for AI-mediated trust." />
-  <title>Anna Apricitas Noyes — Grounding & Accountability for AI-Mediated Trust</title>
-
-  <style>
-    :root{
-      --bg:#0b0d12;
-      --card:#111522;
-      --text:#e9ecf3;
-      --muted:#aab2c5;
-      --line:#232a3d;
-      --accent:#b7c2ff;
-      --accent2:#b9ffe5;
-      --max:960px;
-    }
-
-    *{box-sizing:border-box}
-
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      background:
-        radial-gradient(1200px 700px at 20% -10%, rgba(183,194,255,.18), transparent 60%),
-        radial-gradient(1200px 700px at 90% 10%, rgba(185,255,229,.12), transparent 55%),
-        var(--bg);
-      color:var(--text);
-      line-height:1.55;
-    }
-
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
-
-    header{padding:56px 18px 24px}
-    .wrap{max-width:var(--max); margin:0 auto}
-    .kicker{letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-size:12px}
-    h1{margin:0 0 6px; font-size:38px; line-height:1.15}
-    .subtitle{margin:0; color:var(--muted); font-size:16px; max-width:62ch}
-
-    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
-    .pill{border:1px solid var(--line); background:rgba(255,255,255,.02); color:var(--muted); padding:6px 10px; border-radius:999px; font-size:12px}
-
-    .grid{display:grid; grid-template-columns:1.15fr .85fr; gap:16px; padding:18px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
-
-    .card{
-      background:rgba(17,21,34,.78);
-      border:1px solid var(--line);
-      border-radius:16px;
-      padding:18px;
-      box-shadow:0 10px 26px rgba(0,0,0,.25)
-    }
-
-    .card h2{margin:0 0 10px; font-size:18px}
-    .muted{color:var(--muted)}
-    hr{border:0; border-top:1px solid var(--line); margin:14px 0}
-    .list{margin:0; padding-left:18px; color:var(--muted)}
-    .list li{margin:8px 0}
-
-    footer{padding:24px 18px 48px; color:var(--muted); font-size:12px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Apricitas Noyes — Grounding & Accountability for AI-Mediated Trust</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <div class="header-text">PRIVATE ARCHIVE • AI TRUST & SAFETY</div>
+        <nav class="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="writing.html">Creative Writing</a>
+            <a href="mailto:anna_mariasa@yahoo.com">Contact</a>
+        </nav>
+    </header>
 
-<header>
-  <div class="wrap">
-    <div class="kicker">Private archive • AI trust & safety</div>
+    <main>
+        <div class="profile-image">
+            <img src="headshot.jpg" alt="Headshot of Anna Apricitas Noyes">
+        </div>
 
-    <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
-      <img src="headshot.jpg"
-           alt="Headshot of Anna Apricitas Noyes"
-           style="width:92px; height:92px; border-radius:18px; object-fit:cover; border:1px solid var(--line);" />
-
-      <div>
         <h1>Anna Apricitas Noyes</h1>
-        <p class="subtitle">
-          Grounding & accountability frameworks for AI-mediated trust—focused on over-reliance,
-          misattributed authority, and preserving human judgment in high-stakes, public-facing contexts.
+        
+        <p class="tagline">
+            Grounding & accountability frameworks for AI-mediated trust—focused on over-reliance,
+            misattributed authority, and preserving human judgment in high-stakes, public-facing contexts.
         </p>
 
-        <div class="pillrow">
-          <span class="pill">AI Trust & Safety</span>
-          <span class="pill">Grounding</span>
-          <span class="pill">Accountability</span>
-          <span class="pill">Over-Reliance Risk</span>
-          <span class="pill">Human-in-the-Loop Evaluation</span>
-          <span class="pill">Education / Public-Facing Use</span>
+        <div class="tags">
+            <span class="tag">AI Trust & Safety</span>
+            <span class="tag">Grounding</span>
+            <span class="tag">Accountability</span>
+            <span class="tag">Over-Reliance Risk</span>
+            <span class="tag">Human-in-the-Loop Evaluation</span>
+            <span class="tag">Education / Public-Facing Use</span>
         </div>
-      </div>
-    </div>
-  </div>
-</header>
 
-<main class="wrap">
+        <section class="scope-section">
+            <h2>Scope</h2>
+            <p>
+                This site is intentionally minimal. It shows the shape of the work without posting full texts publicly.
+            </p>
+            <p>
+                The archive examines how fluent conversational systems can be mistaken for grounded authority or care—
+                especially in high-stakes contexts. The aim is to reduce unsafe dependence and preserve explicit human accountability.
+            </p>
+            <p>
+                Framework summaries and evaluation criteria are available to qualified teams upon request.
+            </p>
+            <p class="guiding-principle">
+                <strong>Guiding principle:</strong> AI systems are tools, not moral agents.
+            </p>
+        </section>
 
-<section class="grid">
-  <div class="card">
-    <h2>Scope</h2>
-    <p class="muted">This site is intentionally minimal. It shows the shape of the work without posting full texts publicly.</p>
-    <p>
-      The archive examines how fluent conversational systems can be mistaken for grounded authority or care—
-      especially in high-stakes contexts. The aim is to reduce unsafe dependence and preserve explicit human accountability.
-    </p>
-    <hr />
-    <p class="muted"><strong>Guiding principle:</strong> AI systems are tools, not moral agents.</p>
-  </div>
+        <section>
+            <h2>What This Work Addresses</h2>
+            <ul>
+                <li>Authority transfer through conversational fluency</li>
+                <li>Unsafe reliance formation in educational and health-adjacent contexts</li>
+                <li>Responsibility displacement in human-AI interaction</li>
+                <li>Evaluation criteria for interaction-level risk (beyond content compliance)</li>
+            </ul>
+        </section>
 
-  <div class="card">
-    <h2>Request access</h2>
-    <p class="muted">Materials are shared selectively upon request. Written, asynchronous engagement preferred.</p>
-    <hr />
-    <p class="muted">
-      Contact: <a href="mailto:anna_mariasa@yahoo.com">anna_mariasa@yahoo.com</a><br/>
-      More materials available upon request.
-    </p>
-  </div>
-</section>
+        <section>
+            <h2>Selected Frameworks</h2>
+            <p style="margin-bottom: 24px; font-size: 14px; color: var(--text-muted);">
+                <em>Click framework titles to expand details</em>
+            </p>
+            
+            <div class="framework-item">
+                <h3 class="expandable" onclick="toggleFramework('framework1')">
+                    Warped Mirror Protocol 
+                    <span class="expand-icon" id="icon1">▼</span>
+                </h3>
+                <div class="expandable-content" id="framework1">
+                    <p>
+                        Identifying when reflective fluency creates false attribution of moral agency or grounded authority.
+                        This framework addresses how conversational systems that mirror user values, concerns, or emotional 
+                        states can be mistaken for systems that actually hold moral accountability or expertise.
+                    </p>
+                    <p>
+                        <strong>Core risk:</strong> Users may treat reflection as endorsement, continuity as responsibility, 
+                        or empathetic response as grounded care.
+                    </p>
+                    <p style="font-style: italic; margin-top: 16px;">
+                        Detailed protocol available upon request.
+                    </p>
+                </div>
+            </div>
 
-<section class="grid">
-  <div class="card">
-    <h2>Selected frameworks</h2>
-    <ul class="list">
-      <li><strong>Warped Mirror Protocol</strong> — reflective fluency without moral agency.</li>
-      <li><strong>Essential Version of AI Accountability</strong> — accountability anchored externally.</li>
-      <li><strong>What Remains</strong> — what must remain human in AI-mediated judgment.</li>
-      <li><strong>Maps / Tapestry / The Other Side</strong> — boundary conditions and failure modes.</li>
-    </ul>
-  </div>
-</section>
+            <div class="framework-item">
+                <h3 class="expandable" onclick="toggleFramework('framework2')">
+                    Essential Version of AI Accountability 
+                    <span class="expand-icon" id="icon2">▼</span>
+                </h3>
+                <div class="expandable-content" id="framework2">
+                    <p>
+                        Ensuring accountability remains anchored externally to human decision-makers. 
+                        This framework defines where responsibility must remain human even as AI systems become 
+                        more sophisticated in their advisory or supportive roles.
+                    </p>
+                    <p>
+                        <strong>Core principle:</strong> AI systems can inform, but cannot be accountable. 
+                        Responsibility must remain with identifiable human actors who can be held to account.
+                    </p>
+                    <p style="font-style: italic; margin-top: 16px;">
+                        Full framework and implementation guidance available upon request.
+                    </p>
+                </div>
+            </div>
 
-</main>
+            <div class="framework-item">
+                <h3 class="expandable" onclick="toggleFramework('framework3')">
+                    What Remains 
+                    <span class="expand-icon" id="icon3">▼</span>
+                </h3>
+                <div class="expandable-content" id="framework3">
+                    <p>
+                        Defining what must remain human in AI-mediated judgment and care contexts. 
+                        As systems become more capable of sophisticated reasoning and empathetic response, 
+                        this framework articulates the boundaries that must not be crossed.
+                    </p>
+                    <p>
+                        <strong>Key question:</strong> What forms of judgment, care, and authority should remain 
+                        fundamentally human even if AI systems could technically perform them?
+                    </p>
+                    <p style="font-style: italic; margin-top: 16px;">
+                        Framework document available to safety and ethics teams upon request.
+                    </p>
+                </div>
+            </div>
 
-<footer>
-  <div class="wrap">
-    © <span id="year"></span> Anna Apricitas Noyes • Professional archive
-  </div>
-</footer>
+            <div class="framework-item">
+                <h3 class="expandable" onclick="toggleFramework('framework4')">
+                    Maps / Tapestry / The Other Side 
+                    <span class="expand-icon" id="icon4">▼</span>
+                </h3>
+                <div class="expandable-content" id="framework4">
+                    <p>
+                        Boundary conditions and identifiable failure modes in conversational AI. 
+                        This framework maps the territory where interaction-level risks become acute, 
+                        providing evaluable criteria for detecting when systems are approaching problematic dynamics.
+                    </p>
+                    <p>
+                        <strong>Focus areas:</strong> Gradual authority transfer, escalating reliance, 
+                        responsibility diffusion, and the cumulative effects of repeated interaction patterns.
+                    </p>
+                    <p style="font-style: italic; margin-top: 16px;">
+                        Evaluation criteria and case studies available upon request.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+        <section>
+            <h2>Request Access</h2>
+            <p>
+                Materials are shared selectively upon request. Written, asynchronous engagement preferred.
+            </p>
+            <p class="contact-email">
+                Contact: <a href="mailto:anna_mariasa@yahoo.com">anna_mariasa@yahoo.com</a>
+            </p>
+            <p class="contact-note">
+                Additional reference materials are available upon request.
+            </p>
+        </section>
+    </main>
 
+    <footer>
+        <p>© Anna Apricitas Noyes • Professional Archive</p>
+    </footer>
+
+    <script>
+        // Interactive framework expansion
+        function toggleFramework(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById('icon' + id.charAt(id.length - 1));
+            
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                icon.classList.remove('rotated');
+            } else {
+                // Close all other frameworks
+                document.querySelectorAll('.expandable-content').forEach(item => {
+                    item.classList.remove('open');
+                });
+                document.querySelectorAll('.expand-icon').forEach(ic => {
+                    ic.classList.remove('rotated');
+                });
+                
+                // Open this one
+                content.classList.add('open');
+                icon.classList.add('rotated');
+            }
+        }
+    </script>
 </body>
 </html>
